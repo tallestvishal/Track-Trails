@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track & Trails</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #faf9f9, #fefefe);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px;
+
+
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #606060, #202020);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+  }
+
+  .logo h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #f2f2f2;
+    letter-spacing: 1px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+
+  .nav-links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #4a90e2;
+  }
+
+  .gallery-container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .product-card {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .product-card h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin: 15px 0 5px;
+    font-weight: 600;
+  }
+
+  .product-card p {
+    font-size: 1.2em;
+    color: #4a90e2;
+    font-weight: 500;
+  }
+
+  .product-card button {
+    padding: 12px 25px;
+    margin: 15px 0 20px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .product-card button:hover {
+    background-color: #3867d6;
+  }
+
+  @media (max-width: 768px) {
+    .logo h1 {
+      font-size: 1.8em;
+    }
+
+    .product-card h2 {
+      font-size: 1.4em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .logo h1 {
+      font-size: 1.5em;
+    }
+
+    .product-card h2 {
+      font-size: 1.3em;
+    }
+
+    .product-card p {
+      font-size: 1em;
+    }
+
+    .nav-links {
+      display: none;
+    }
+  }
+</style>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="C:\Users\VISHAL\OneDrive\Desktop\JS\JS\logo.jpeg" alt="Logo">
+      <h1>Track & Trails</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="gallery-container">
+    <div class="product-card">
+      <img src="C:\Users\VISHAL\OneDrive\Desktop\JS\JS\kids.jpeg" alt="Kids 14 inch">
+      <h2>Kids 14"</h2>
+      <p>$49.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="C:\Users\VISHAL\OneDrive\Desktop\JS\JS\kid1.jpeg" alt="Kids 16 inch">
+      <h2>Kids 16"</h2>
+      <p>$59.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="C:\Users\VISHAL\OneDrive\Desktop\JS\JS\kid3.jpeg" alt="Kids 20 inch">
+      <h2>Kids 20"</h2>
+      <p>$69.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\VISHAL\OneDrive\Desktop\JS\JS\26.jpeg" alt="26 inch with Suspension">
+      <h2>26" with Suspension</h2>
+      <p>$79.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\VISHAL\OneDrive\Desktop\JS\JS\26_1.jpeg" alt="Ladies 26 inch">
+      <h2>Ladies 26"</h2>
+      <p>$79.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\VISHAL\OneDrive\Desktop\JS\JS\gear_1.jpeg" alt="29 inch with Gears">
+      <h2>29" with Gears</h2>
+      <p>$89.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\VISHAL\OneDrive\Desktop\JS\JS\gear.jpeg" alt="26 inch Gears and Suspension">
+      <h2>26" with Gears and Suspension</h2>
+      <p>$89.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\VISHAL\OneDrive\Desktop\JS\JS\battery.jpeg" alt="Electric Cycle">
+      <h2>Electric Cycle</h2>
+      <p>$99.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </main>
+
+</body>
+
+</html>
